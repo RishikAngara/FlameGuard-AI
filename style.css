@@ -1,0 +1,127 @@
+/* Global Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://images.pexels.com/photos/1423600/pexels-photo-1423600.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.6);  /* 60% opacity black overlay */
+    z-index: -1; /* Ensures the overlay is behind the content */
+}
+
+h2, h3 {
+    color: #fff;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #ff914d;
+    font-weight: bold;
+}
+
+a:hover {
+    color: #fff;
+}
+
+/* Form Container */
+form {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    width: 350px;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="file"] {
+    width: 90%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    transition: 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="file"]:focus {
+    border-color: #ff914d;
+    outline: none;
+}
+
+/* Button Styles */
+button {
+    background-color: #ff914d;
+    color: #fff;
+    border: none;
+    padding: 12px 20px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    box-shadow: 0 5px 10px rgba(255, 145, 77, 0.4);
+}
+
+button:hover {
+    background-color: #ff6f00;
+    transform: scale(1.05);
+}
+
+/* Flash Message Styles */
+p {
+    padding: 10px;
+    font-size: 14px;
+    border-radius: 5px;
+}
+
+p.danger {
+    background-color: #ffcccc;
+    color: #cc0000;
+}
+
+p.success {
+    background-color: #ccffcc;
+    color: #006600;
+}
+
+/* Prediction Result */
+h3 {
+    background-color: #fff;
+    color: #ff6f00;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Link to other pages */
+p a {
+    color: #ff6f00;
+}
+
+p a:hover {
+    text-decoration: underline;
+}
